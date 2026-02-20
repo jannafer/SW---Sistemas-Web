@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Ejemplo</title>
+	</head>
+	<body>
+		<ul id="lista"><li>Server Date: Tue Feb 21 9:28:33 CET 2020</li></ul>
+		<br/>
+		<script language="javascript">
+			var data = new Date();
+			var text_element = document.createTextNode("Client Date: " + data);
+			var li_element = document.createElement("li");
+			li_element.appendChild(text_element);
+			document.getElementById("lista").appendChild(li_element);
+		</script>
+	</body>
+</html>
